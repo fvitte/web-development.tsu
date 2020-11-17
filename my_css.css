@@ -1,0 +1,21 @@
+.title {
+	font-size: 200%; /*увеличенный шрифт (на 200%)*/
+	color: orange; /*цвет шрифта*/
+	text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 2em blue; /* Параметры тени */; /*тень*/
+}
+.center {
+	text-align: center; /*отцентрованный текст*/
+}
+#size {
+	width: 44px;
+}
+.size {
+	width: 55px;
+}
+.titleShadow {
+	font-size: 200%; /*увеличенный шрифт (на 200%)*/
+	font-weight: bold; /*жирный шрифт*/
+	color: orange; /*цвет шрифта*/
+	text-shadow: 1px 1px 2px black; /* Параметры тени */; /*тень*/
+	/*text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 2em blue; /* Параметры тени */; /*тень*/
+}

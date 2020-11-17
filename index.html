@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Страница HTML5 + CSS + JS</title><meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="my_css.css">
+  <link rel="shortcut icon" href="checklist_106575.ico">
+  <script type="text/javascript" src="myScript.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ </head>
+ <body bgcolor="DarkKhaki">
+ <script>
+ function aa(element){
+	let p = document.createElement("h1");
+	p.innerHTML = element.name + " " + element.surname;
+	//document.body.append(p);
+	document.body.appendChild(p);
+};
+ </script>
+ <address> Работа выполнена Феденко В.С.<br>
+		Практическое занятие 3.2 <br>
+		Библиотеки, фрейворки и экосистема JS</address>
+  <article>
+  <h1 class="center"><abbr title="HyperText Markup Language, version 5 + CSS + JS + Библиотеки + Фреймворки"> HTML5 + CSS + JS + Библиотеки + Фреймворки</abbr></h1>
+ <div class="card-group">
+ <div class="card">
+  <div class="card-body"><!-- Начало текстового контента -->
+    <h4 class="card-title"><strong>Несколько полезных ссылок:</strong></h4>
+    <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карточки</h6>
+    <!--<p class="card-text">Некоторый текст...</p>-->
+	<ul class="card-text">
+    <li class="tab-pane fade show active" id="item2"><a href="http://www.w3c.org" target=_blank>Официальная страница W3C</a></li>
+	<li><ol>Несколько учебников:
+			<li><a href="http://htmlbook.ru/html" target=_blank>Справочник по HTML</a></li>
+			<li><a href="https://wm-school.ru/html/html_start.html" target=_blank>Учебник по HTML</a></li>
+			<li><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics" target=_blank>Основы HTML</a></li>
+		</ol>
+	</li>
+	<li><a style="font-size: 120%" href="http://itpk.tsu.tula.ru/moodle/?redirect=0" target=_blank>Курсы повышения квалификации</a></li>
+	<li><a href="http://itpk.tsu.tula.ru/moodle/course/view.php?id=9#section-2" target=_blank>Клиентская часть веб-приложений - HTML:</a></li>
+	<li>
+		<a class="card-link" href="http://itpk.tsu.tula.ru/moodle/mod/lesson/view.php?id=229" target=_blank>Лекция 2.1</a> /
+		<a class="card-link"href="http://itpk.tsu.tula.ru/moodle/mod/lesson/view.php?id=131" target=_blank> Лекция 2.2 </a>
+	</li>
+	</ul>
+   </div><!-- Конец текстового контента -->
+ </div><!-- Конец карточки -->
+
+<div class="card border-danger">
+    <!-- card-header -->
+    <div class="card-header bg-danger text-white">
+        Найти на сайте
+    </div>
+    <!-- card-body -->
+    <div class="card-body">
+        <!-- HTML форма -->
+        <form action="#" role="search">
+            <div class="input-group">
+                <input type="text" name="query" class="form-control" placeholder="Что найти?" value="">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-danger">Поиск</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<script>arr.forEach(aa); </script>
+<!-- Карточка с навигацией (в заголовке) -->
+
+<div class="card">
+    <!-- Шапка с навигацией -->
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#item1">Item 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#item2">Официальная страница W3C</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#div1">Переход на таблицу</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Текстовый контент -->
+    <div class="card-body tab-content">
+        <div class="tab-pane fade show active" id="item1">
+            Twitter Bootstrap является на сегодняшний день один из наиболее популярных html+css+javaScript-фреймворков. Но, не смотря на его популярность, не каждый верстальщик может с ним справиться. Многие вообще его не применяют. Связано это с тем, что единственная стоящая документация – это официальный сайт Twitter Bootstrap. Чтобы разобраться в данной документации нужно потратить уйму времени. Единственное облегчение это то, что существует полный перевод документации на русский язык.
+
+На момент написания данной статьи последняя версия Twitter Bootstrap – версия 3.0.3. Также существует и вторая версия – 2.3.2. Но если перейти на сайт второй версии мы можем увидеть сообщение о том, что вторая версия уже не поддерживается и разработчики советуют перейти к третьей. Перевод на русский: версия 2.3.2; версия 3.0.3.
+
+Twitter Bootstrap немного тяжеловесное решение для разработки сайта и поэтому подключать его ради оформления кнопок, к примеру, нет смысла. Но разработчики это учли и дали возможность кастомизации (выбора) именно нужных решений. Например, мы хотим на сайте оформить кнопки и создать модальные окна. Нет смысла качать весь bootstrap, достаточно зайти в раздел Customize и отметить галочками нужные пункты и в самом низу страницы нажать «Customize and Download». Прежде, чем качать архив мы можем также изменить значения LESS для того, чтобы подстроить некоторые параметры такие, как цвет, размер и другое на свое усмотрение. Например, нас не устраивает размер шрифта заголовка первого уровня (H1) по умолчанию, мы задаем свое значение. В созданном архиве данное правило будет применено к данному заголовку. Теперь скачанный архив будет весить намного меньше, чем полная версия всего фреймворка.
+
+
+        </div>
+       </div>
+</div><!-- Конец карточки -->
+
+	<div class="tab-pane fade show active" id="div1">
+	<p id="p1" onmouseover="shad1()" onmouseout="shad2()" class="titleShadow center">Поработаем с таблицей:</p></div>
+	<p class="center">
+	<table border=1 align="center" class="center">
+	<tr>
+    <th class="col-xs-6">Первая колонка</th>
+    <th>Вторая колонка</th>
+    <th>Третья колонка</th>
+    <th>Четвертая колонка</th>
+    <th>Пятая колонка</th>
+  </tr>
+  <tr>
+    <td>&#10102 строка</td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B8&stype=image&lr=11189&source=wiz" target=_blank>
+		<img src="picture1.jpg" alt="Улыбающийся смайл" id="size"></a></td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B8&stype=image&lr=11189&source=wiz" target=_blank>Улыбающийся смайл</a></td>
+    <td style="text-align: center"><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B8&stype=image&lr=11189&source=wiz" target=_blank>
+		<button>:)</button></a></td>
+    <td style="text-align: center">
+		<button id='button1' onclick='moveButton1()'><img id='img1'src="picture1.jpg" width=30 high=30 alt="Улыбающийся смайл" style="vertical-align: middle"> Кнопка с рисунком :)</button></td>
+  </tr>
+  <tr>
+    <td>&#10103 строка</td>
+    <td><img src="picture2.jpg" alt="Подмигивающий смайл" class="size"></td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D0%BF%D0%BE%D0%B4%D0%BC%D0%B8%D0%B3%D0%B8%D0%B2%D0%B0%D1%8E%D1%89%D0%B8%D0%B9&stype=image&lr=11189&source=wiz" target=_blank>Подмигивающий смайл</a></td>
+    <td valign="center" align="center"><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%83%D0%BB%D1%8B%D0%B1%D0%BA%D0%B8&stype=image&lr=11189&source=wiz" target=_blank>
+		<button>;-)</button></a></td>
+    <td align=center valign=center>
+		<button id='button2' onclick='moveButton2()'><img id='img2' src="picture2.jpg" alt="Подмигивающий смайл" width=30 high=30 style="vertical-align: middle">Кнопка с рисунком ;-)</button></td>
+  </tr>
+  <tr>
+    <td>&#10104 строка</td>
+    <td id="td3"><img id="img3" src="picture3.jpg" alt="Языкастый смайл" class="size"></td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%81%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC&lr=11189" target=_blank>Языкастый смайл</a></td>
+    <td align=center valign=center><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D1%81%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC&lr=11189" target=_blank>
+		<button>:-р</button></a></td>
+    <td align=center valign=center><button onclick='hideImg()'><img src="picture3.jpg" alt="Языкастый смайл" width=30 high=30 style="vertical-align: middle">Кнопка с рисунком :-ь</button></td>
+  </tr>
+  <tr>
+    <td>&#10105 строка</td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D1%8B%D0%B9&lr=11189" target=_blank>
+		<img src="picture4.jpg" alt="Грустный смайл" class="size"></a></td>
+    <td><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D1%8B%D0%B9&lr=11189" target=_blank>Грустный смайл</a></td>
+    <td align=center valign=center><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D1%8B%D0%B9&lr=11189" target=_blank>
+		<button>:-(</button></a></td>
+    <td align=center valign=center><a href="https://yandex.ru/images/search?text=%D1%81%D0%BC%D0%B0%D0%B9%D0%BB%D0%B8%D0%BA%20%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D1%8B%D0%B9&lr=11189" target=_blank>
+		<button><img src="picture4.jpg" alt="Языкастый смайл" width=30 high=30 style="vertical-align: middle">Кнопка с рисунком :-(</button></a></td>
+  </tr>
+	</table>
+
+	</p>
+  </article>
+   
+   <script>
+	let it = document.getElementById("item1");
+	$(it).hide("slow");
+	$(it).show(5000);
+   </script>
+   
+   
+   
+   
+   
+   
+   
+   </body>
+</html>
