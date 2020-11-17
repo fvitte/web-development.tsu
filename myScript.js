@@ -8,7 +8,6 @@ function moveButton1(){ // Функция замены содержимого к
 		document.getElementById('button2').innerHTML = "<img id='img2' src='picture2.jpg' alt='Подмигивающий смайл' width=30 high=30 style='vertical-align: middle'>Кнопка с рисунком ;-)";
 	}
 	i = !i;
-	console.log(i);
 };
 function moveButton2(){ // Функция замены содержимого кнопки 2 на содержимое 1 и наоборот
 		if(!i){
@@ -50,13 +49,4 @@ let arr = [
 		surname: "Петрович"
 }
 ];
-/*function aa(element){
-	console.log(element)
-	let p = document.createElement("h1");
-	p.innerHTML = element.name + " " + element.surname;
-	console.log(p);
-	document.body.append("<h1>djg;lsdk;ld</h1>");
-	//document.body.appendChild(p);
-};*/
-//arr.forEach(aa);
 //document.getElementById('dd').innerHTML = "<h1>Сегодняшняя дата: " + d +"</h1>";
